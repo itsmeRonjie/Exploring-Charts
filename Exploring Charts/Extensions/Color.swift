@@ -5,11 +5,10 @@
 //  Created by Ronjie Diafante Man-on on 5/1/25.
 //
 
-import Foundation
 import SwiftUI
 
 extension Color {
-    static let maroon = Color( red: 128 / 255.0, green: 0 / 255.0, blue: 0 / 255.0)
+    static let maroon = Color( red: 128 / 255.0, green: 0 / 255.0, blue: 0)
     static let darkRed = Color( red: 139 / 255.0, green: 0 / 255.0, blue: 0)
     static let brown1 = Color( red: 165 / 255.0, green: 42 / 255.0, blue: 42)
     static let firebrick = Color( red: 178 / 255.0, green: 34 / 255.0, blue: 34)
@@ -312,4 +311,17 @@ extension Color {
         
         return theRandomColors
     }
+    
+}
+
+extension Color {
+    static let defaultColors: [Color] = [
+        .pink,
+        .green,
+        .mint,
+        .purple,
+        .indigo,
+        .red,
+        .brown
+    ]
 }
