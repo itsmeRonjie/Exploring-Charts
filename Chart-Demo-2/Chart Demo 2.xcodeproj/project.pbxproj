@@ -11,9 +11,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CEDE13242DC464440087E8BF /* Chart Demo 2 */ = {
+		CEDE13242DC464440087E8BF /* Chart */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Chart Demo 2";
+			path = Chart;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		CEDE13192DC464440087E8BF = {
 			isa = PBXGroup;
 			children = (
-				CEDE13242DC464440087E8BF /* Chart Demo 2 */,
+				CEDE13242DC464440087E8BF /* Chart */,
 				CEDE13232DC464440087E8BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				CEDE13242DC464440087E8BF /* Chart Demo 2 */,
+				CEDE13242DC464440087E8BF /* Chart */,
 			);
 			name = "Chart Demo 2";
 			packageProductDependencies = (
@@ -244,10 +244,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Chart Demo 2/Chart_Demo_2.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Chart/Chart_Demo_2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Chart Demo 2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Chart/Preview Content\"";
 				DEVELOPMENT_TEAM = XTKB64FV7J;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -283,10 +283,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Chart Demo 2/Chart_Demo_2.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Chart/Chart_Demo_2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Chart Demo 2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Chart/Preview Content\"";
 				DEVELOPMENT_TEAM = XTKB64FV7J;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
