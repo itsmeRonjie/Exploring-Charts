@@ -11,6 +11,8 @@ import Charts
 struct MainView: View {
     let min = 0.0
     let max = 200.0
+    @State private var isLegendVisible = false
+    
     var body: some View {
         VStack {
             Text("Welcome to Charts!")
@@ -92,6 +94,18 @@ struct MainView: View {
             .chartYAxis {
                 AxisMarks(position: .leading)
             }
+            .chartLegend(isLegendVisible ? .visible : .hidden)
+            .padding()
+            
+            Spacer()
+            Button {
+                withAnimation {
+                    isLegendVisible.toggle()
+                }
+            } label: {
+                Image(systemName: isLegendVisible ? "eye" : "eye.slash")
+            }
+
         }
         .padding()
     }
