@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Charts
 
 struct MainView: View {
     var body: some View {
