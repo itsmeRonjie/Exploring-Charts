@@ -17,7 +17,6 @@ struct MainView: View {
     let yAxisMarkPosition: AxisMarkPosition = .leading
     
     @State private var chartType: ChartType = .bar
-    @State private var isVerticalChart = true
     
     var body: some View {
         VStack {
