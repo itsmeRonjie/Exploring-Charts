@@ -1,13 +1,13 @@
 //
-//  TestColorButtonView.swift
-//  Color Extensions
+//  ContentView.swift
+//  Exploring Charts
 //
 //  Created by Ronjie Diafante Man-on on 5/1/25.
 //
 
 import SwiftUI
 
-struct TestColorButtonView: View {
+struct MainView: View {
     @State var colors: [Color]
     @State private var rotateBar: Bool = false
     @State private var tilt: CGFloat = 0.0
@@ -26,7 +26,7 @@ struct TestColorButtonView: View {
             HStack(alignment: .bottom, spacing: 5) {
                 ForEach(colors, id: \.self) { color in
                     let height: Double = Double.random(in: 50...200)
-                    BorderedRectangle(
+                    BorderedRectangleView(
                         color: color,
                         barWidth: barWidth,
                         height: height
@@ -35,7 +35,7 @@ struct TestColorButtonView: View {
                         .degrees(rotateBar ? 180 : 0),
                         axis: (x: 0, y:1 , z: 0)
                     )
-
+                    
                 }
             }
             .rotation3DEffect(
@@ -57,7 +57,7 @@ struct TestColorButtonView: View {
                         }
                     }
                     .onEnded { value in
-                
+                        
                     }
             )
             .onTapGesture {
@@ -84,24 +84,6 @@ struct TestColorButtonView: View {
     }
 }
 
-struct BorderedRectangle: View {
-    let color: Color
-    let barWidth: CGFloat
-    let height: CGFloat
-    
-    var body: some View {
-        RoundedRectangle(cornerRadius: 5)
-            .fill(color)
-            .frame(width: barWidth, height: height)
-            .overlay {
-                RoundedRectangle(cornerRadius: 5)
-                    .stroke(lineWidth: 0.7)
-            }
-    }
-}
-
 #Preview {
-    TestColorButtonView(
-        colors: Color.defaultColors
-    )
+    MainView(colors: Color.defaultColors)
 }

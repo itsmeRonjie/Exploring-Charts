@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		CEDE12422DC3404E0087E8BF /* Exploring Charts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exploring Charts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDE12422DC3404E0087E8BF /* Chart Demo 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chart Demo 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CEDE12442DC3404E0087E8BF /* Exploring Charts */ = {
+		CEDE12442DC3404E0087E8BF /* Chart */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Exploring Charts";
+			path = Chart;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		CEDE12392DC3404E0087E8BF = {
 			isa = PBXGroup;
 			children = (
-				CEDE12442DC3404E0087E8BF /* Exploring Charts */,
+				CEDE12442DC3404E0087E8BF /* Chart */,
 				CEDE12432DC3404E0087E8BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		CEDE12432DC3404E0087E8BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEDE12422DC3404E0087E8BF /* Exploring Charts.app */,
+				CEDE12422DC3404E0087E8BF /* Chart Demo 1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEDE12412DC3404E0087E8BF /* Exploring Charts */ = {
+		CEDE12412DC3404E0087E8BF /* Chart Demo 1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEDE12512DC340500087E8BF /* Build configuration list for PBXNativeTarget "Exploring Charts" */;
+			buildConfigurationList = CEDE12512DC340500087E8BF /* Build configuration list for PBXNativeTarget "Chart Demo 1" */;
 			buildPhases = (
 				CEDE123E2DC3404E0087E8BF /* Sources */,
 				CEDE123F2DC3404E0087E8BF /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				CEDE12442DC3404E0087E8BF /* Exploring Charts */,
+				CEDE12442DC3404E0087E8BF /* Chart */,
 			);
-			name = "Exploring Charts";
+			name = "Chart Demo 1";
 			packageProductDependencies = (
 			);
 			productName = "Exploring Charts";
-			productReference = CEDE12422DC3404E0087E8BF /* Exploring Charts.app */;
+			productReference = CEDE12422DC3404E0087E8BF /* Chart Demo 1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CEDE123D2DC3404E0087E8BF /* Build configuration list for PBXProject "Exploring Charts" */;
+			buildConfigurationList = CEDE123D2DC3404E0087E8BF /* Build configuration list for PBXProject "Chart Demo 1" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEDE12412DC3404E0087E8BF /* Exploring Charts */,
+				CEDE12412DC3404E0087E8BF /* Chart Demo 1 */,
 			);
 		};
 /* End PBXProject section */
@@ -244,10 +244,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Exploring Charts/Exploring_Charts.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Chart/Chart_Demo_1.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Exploring Charts/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Chart/Preview Content\"";
 				DEVELOPMENT_TEAM = XTKB64FV7J;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -267,7 +267,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "tech.vauldex.Exploring-Charts";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.vauldex.Chart-Demo-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -283,10 +283,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Exploring Charts/Exploring_Charts.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Chart/Chart_Demo_1.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Exploring Charts/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Chart/Preview Content\"";
 				DEVELOPMENT_TEAM = XTKB64FV7J;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -306,7 +306,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "tech.vauldex.Exploring-Charts";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.vauldex.Chart-Demo-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -320,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEDE123D2DC3404E0087E8BF /* Build configuration list for PBXProject "Exploring Charts" */ = {
+		CEDE123D2DC3404E0087E8BF /* Build configuration list for PBXProject "Chart Demo 1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEDE124F2DC340500087E8BF /* Debug */,
@@ -329,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEDE12512DC340500087E8BF /* Build configuration list for PBXNativeTarget "Exploring Charts" */ = {
+		CEDE12512DC340500087E8BF /* Build configuration list for PBXNativeTarget "Chart Demo 1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEDE12522DC340500087E8BF /* Debug */,
