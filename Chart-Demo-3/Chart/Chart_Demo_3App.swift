@@ -11,7 +11,12 @@ import SwiftUI
 struct Chart_Demo_3App: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView(
+                dailySales: defaultDailySales,
+                barColors: defaultBarColors,
+                min: 0.0,
+                max: 700.0
+            )
         }
     }
 }

@@ -5,7 +5,7 @@
 //  Created by Ronjie Diafante Man-on on 5/2/25.
 //
 
-import Foundation
+import SwiftUI
 
 struct DailySales: Identifiable {
     let id = UUID()
@@ -14,12 +14,21 @@ struct DailySales: Identifiable {
 }
 
 let defaultDailySales: [DailySales] = [
-    .init(day: "Mon", sales: 100),
-    .init(day: "Tue", sales: 120),
-    .init(day: "Wed", sales: 140),
-    .init(day: "Thu", sales: 160),
+    .init(day: "Mon", sales: 43),
+    .init(day: "Tue", sales: 101),
+    .init(day: "Wed", sales: 203),
+    .init(day: "Thu", sales: 123),
     .init(day: "Fri", sales: 180),
-    .init(day: "Sat", sales: 200),
-    .init(day: "Sun", sales: 220),
+    .init(day: "Sat", sales: 73),
+    .init(day: "Sun", sales: 13),
 ]
 
+let defaultBarColors: [Color] = [
+    .pink,
+    .green,
+    .mint,
+    .purple,
+    .indigo,
+    .red,
+    .brown
+]

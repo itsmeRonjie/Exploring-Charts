@@ -9,17 +9,40 @@ import SwiftUI
 import Charts
 
 struct MainView: View {
+    let dailySales: [DailySales]
+    let barColors: [Color]
+    let min: Double
+    let max: Double
+    let xAxisMarkPosition: AxisMarkPosition = .bottom
+    let yAxisMarkPosition: AxisMarkPosition = .leading
+    
+    @State private var isVerticalChart = true
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Chart Demo 3!")
+                .font(.title)
+                .fontWeight(.semibold)
+            
+            Chart {
+                ForEach(dailySales) { chart in
+                    BarMark(
+                        x: .value("Day", chart.day),
+                        y: .value("Sales", chart.sales)
+                    )
+                    .foregroundStyle(by: .value("Day", chart.day))
+                }
+            }
         }
         .padding()
     }
 }
 
 #Preview {
-    MainView()
+    MainView(
+        dailySales: defaultDailySales,
+        barColors: defaultBarColors,
+        min: 0.0,
+        max: 700.0
+    )
 }
