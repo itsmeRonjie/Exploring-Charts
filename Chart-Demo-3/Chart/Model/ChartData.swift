@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+enum ChartType {
+    case bar, line, area
+}
+
 struct DailySales: Identifiable {
     let id = UUID()
     let day: String

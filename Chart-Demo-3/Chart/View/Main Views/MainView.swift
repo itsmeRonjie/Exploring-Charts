@@ -16,6 +16,7 @@ struct MainView: View {
     let xAxisMarkPosition: AxisMarkPosition = .bottom
     let yAxisMarkPosition: AxisMarkPosition = .leading
     
+    @State private var chartType: ChartType = .bar
     @State private var isVerticalChart = true
     
     var body: some View {
@@ -25,14 +26,57 @@ struct MainView: View {
                 .fontWeight(.semibold)
             
             Chart {
+                
                 ForEach(dailySales) { chart in
-                    BarMark(
-                        x: .value("Day", chart.day),
-                        y: .value("Sales", chart.sales)
-                    )
-                    .foregroundStyle(by: .value("Day", chart.day))
+                    switch(chartType) {
+                    case .bar:
+                        BarMark(
+                            x: .value("Day", chart.day),
+                            y: .value("Sales", chart.sales)
+                        )
+                        .foregroundStyle(by: .value("Day", chart.day))
+                        
+                    case .line:
+                        LineMark(
+                            x: .value("Day", chart.day),
+                            y: .value("Sales", chart.sales)
+                        )
+                        
+                    case .area:
+                        AreaMark(
+                            x: .value("Day", chart.day),
+                            y: .value("Sales", chart.sales)
+                        )
+                    }
                 }
             }
+            
+            HStack {
+                Button {
+                    withAnimation {
+                        chartType = .bar
+                    }
+                } label: {
+                    Text("BAR")
+                }
+                Spacer()
+                Button {
+                    withAnimation {
+                        chartType = .line
+                    }
+                } label: {
+                    Text("LINE")
+                }
+                Spacer()
+                Button {
+                    withAnimation {
+                        chartType = .area
+                    }
+                } label: {
+                    Text("AREA")
+                }
+            }
+            .padding()
         }
         .padding()
     }
